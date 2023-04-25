@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>STUDENT DATA</title>
+</head>
+<body>
+<h1 style="color: red">Students detalis are as below</h1>
+<br>
+ <fieldset style="width: 200px;">
+        <legend>RIGISTRATION</legend>
+        <FORm action="savestudent" method="post">
+            <TAble>
+                <tr>
+                    <td><label for="first">FIRST NAME:</label> </td>
+                    <td><input type="text" name="first" id="first" placeholder="first name"> </td>
+                </tr>
+                <tr>
+                    <td><label for="last">LAST NAME:</label> </td>
+                    <td><input type="text" name="last" id="last" placeholder="last name"> </td>
+                </tr>
+                <tr>
+                <td><lable for="ph">PHONE NUMBER:</lable></td>
+                <td><input type="tel" name="ph" id="ph" pattern="[0-9]{10}" maxlength="10"></td>
+                </tr>
+                <tr>
+                    <td><label for="psw">PASSWORD:</label> </td>
+                    <td><input type="password" name="psw" id="psw"> </td>
+                </tr>
+                <tr>
+                    <td><label for="gen">GENDER:</label> </td>
+                    <td><input type="radio" name="gen" id="gen" value="male">MALE <input type="radio" name="gen" id="gen" value="female">FEMAL <input type="radio" name="gen" id="gen" value="other">OTHER</td>
+            </tr>
+            <tr>
+                <td><label for="dob">DOB:</label> </td>
+                <td><input type="date" name="dob" id="dob"> </td>
+            </tr>
+            <tr>
+                <td><label for="qual"></label>HOBBIES: </td>
+                <td><input type="checkbox" name="qual" id="qual" value="netflex">Netflex <input type="checkbox" name="qual" id="qual" value="cooking">Cooking <input type="checkbox" name="qual" id="qual value="listing to music">Listing music </td>
+            </tr>
+            <tr>
+                <td><label for="add">ADDRESS:</label> </td>
+                <td><textarea name="add" id="add" cols="30" rows="10"></textarea> </td>
+            </tr>
+            <tr>
+                <td><label for="email">EMAIL:</label> </td>
+                <td><input type="email" name="email" id="email"> </td>
+            </tr>
+           
+            <tr>
+                <td><label for="drop">COUNTRY:</label> </td>
+                <td><select name="drop" id="drop">
+                <option>SELECT</option>
+                <option>INDIA</option>
+                    <option >PAKISTAN</option>
+                    <option >MALESIA</option>
+                    <option >USA</option>
+                    <option >RUSSIA</option>
+                    <option >BRITEN</option>
+                </select> </td>
+                
+            </tr>
+
+ <tr>
+                <td><button type="submit">save</button> </td>
+                <td><button type="reset">Cancel</button> </td>
+                
+            </tr>
+            
+            </TAble>
+        </FORm>
+    </fieldset>
+</body>
+</html>
